@@ -1,0 +1,21 @@
+1. What file format is used for this binary? And what architecture is it complied for?
+Format: lf64-x86-64
+Architecture: i386:x86-64
+
+2. What are some of the names of segment/sections you find?
+Some of the segments:
+DYNAMIC
+EH_FRAME
+INTERP
+LOAD
+NOTE
+
+Some of the sections:
+.gnu.hash
+.interp
+
+3. What segment/section contains main (the function) and what is the address of main? (it should be the same as what you saw in gdb)
+Main section: .text
+Main address: 0000000000001206.
+4. Do you see the stack segment anywhere? What about the heap? Explain?
+The stack segment is under the program header
